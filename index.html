@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1 Visualization</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Expected Years of Schooling Around the World</h1>
+  <p class="subtitle">Click on a country to see trends over time.</p>
+  <div id="main">
+
+    <canvas id="chart" style="display: none;"></canvas>
+    
+    <h2>2010</h2>
+    <div id="map2010" class="map-container"></div>
+
+    <h2>2015</h2>
+    <div id="map2015" class="map-container"></div>
+
+    <h2>2020</h2>
+    <div id="map2020" class="map-container"></div>
+  </div>
+
+  <h3>About the data:</h3>
+  <p>These maps are derived from data from United Nations Development Program (UNDP) and can be accessed 
+    <a href='https://hdr.undp.org/data-center/documentation-and-downloads'>here.</a>
+  </p>
+  <p>Country shapefiles from <a href="https://www.naturalearthdata.com">Natural Earth.</a></p>
+  <p>Expected years of schooling is determined from summing the enrollment ratios of each age and assumes
+    that these trends stay the same throughout the child's life. More information on the source of this data and
+    its usage in calculating the Human Development Index (HDI) can be found 
+    <a href="https://hdr.undp.org/sites/default/files/2021-22_HDR/hdr2021-22_technical_notes.pdf">here.</a>
+  </p>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="world2.geojson"></script>
+  <script src="script.js"></script>
+  
+</body>
+<footer>Austin Singleton Dec. 22 2023</footer>
+<footer>For Assignment 1, Spatial Data Visualization (UTwente / ITC)</footer>
+</html>
